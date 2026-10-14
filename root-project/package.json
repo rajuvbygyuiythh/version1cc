@@ -1,0 +1,16 @@
+{
+  "name": "chitchat-verification",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser-free verification tools; not production UI dependencies",
+  "scripts": {
+    "test": "node --test tests/browser-ui.test.cjs tests/contracts.test.cjs tests/package.test.cjs tests/verification.test.cjs tests/project-map.test.cjs",
+    "verify": "node scripts/verify.cjs",
+    "package:source": "node scripts/package-source.cjs",
+    "map:update": "node scripts/project-map.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0",
+    "fflate": "0.8.2"
+  }
+}
